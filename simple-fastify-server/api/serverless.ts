@@ -1,6 +1,6 @@
 import Fastify, { FastifyReply, FastifyRequest } from "fastify";
 import Routes from "../src/app.js";
-import MessagerRoute from "../src/sample/messengerRoute.js";
+import MessagerRoute from "../src/messengerRoute.js";
 const app = Fastify({
   logger: true,
 });
