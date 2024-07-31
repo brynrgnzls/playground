@@ -1,5 +1,6 @@
 import Fastify, { FastifyReply, FastifyRequest } from "fastify";
 import Routes from "../src/app.js";
+import MessagerRoute from "../src/sample/messengerRoute.js";
 const app = Fastify({
   logger: true,
 });
@@ -11,6 +12,7 @@ app.get("/", async (req, res) => {
 });
 
 app.register(Routes, { prefix: "/" });
+app.register(MessagerRoute, { prefix: "/messageRoute" });
 
 export default async function handler(req: FastifyRequest, res: FastifyReply) {
   await app.ready();
