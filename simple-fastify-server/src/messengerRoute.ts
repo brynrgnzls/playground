@@ -13,4 +13,5 @@ export default function MessageRoute(
   instance.get("/", (req: FastifyRequest, res: FastifyReply) => {
     return res.send({ Hello: "World from message Route" });
   });
+  done();
 }

@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
 });
 
 // app.register(Routes, { prefix: "/" });
-// app.register(MessagerRoute, { prefix: "/messageRoute" });
+app.register(MessagerRoute, { prefix: "/messageRoute" });
 
 export default async function handler(req: FastifyRequest, res: FastifyReply) {
   await app.ready();
