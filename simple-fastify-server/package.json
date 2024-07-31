@@ -13,5 +13,9 @@
   "dependencies": {
     "fastify": "^4.28.1",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.3",
+    "@types/node": "^22.0.0"
   }
 }
