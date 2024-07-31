@@ -11,7 +11,7 @@ app.get("/", async (req, res) => {
     .send({ message: "Hello World", name: "Bryan Gonzales" });
 });
 
-app.register(Routes, { prefix: "/" });
+// app.register(Routes, { prefix: "/" });
 app.register(MessagerRoute, { prefix: "/messageRoute" });
 
 export default async function handler(req: FastifyRequest, res: FastifyReply) {
