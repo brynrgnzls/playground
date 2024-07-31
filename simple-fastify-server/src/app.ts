@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyServerOptions } from "fastify";
-import MessageRoute from "./rotues/messengerRoute";
+import { MessageRoute } from "./rotues/index.js";
 function Routes(
   instance: FastifyInstance,
   _option: FastifyServerOptions,
