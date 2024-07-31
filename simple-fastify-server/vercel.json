@@ -1,15 +1,5 @@
 {
   "installCommand": "pnpm install",
   "buildCommand": "pnpm vercel-build",
-  "outputDirectory": "build",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "api/serverless.ts"
-    },
-    {
-      "source": "./my-shit",
-      "destination": "https://example.com/"
-    }
-  ]
+  "outputDirectory": "build"
 }
