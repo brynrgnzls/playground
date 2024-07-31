@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(173, 173, 173);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 850px;
+  background-color: gray;
+  gap: 2rem;
+  margin: 0 160px;
+}
+
+.item-1 {
+  background-color: red;
+}
+
+.item-2 {
+  background-color: blue;
+}
+
+.item-3 {
+  background-color: yellow;
+}
