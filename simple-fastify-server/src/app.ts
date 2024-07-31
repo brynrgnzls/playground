@@ -8,7 +8,7 @@ function Routes(
   instance.get("/test", async (req, res) => {
     return res.send({ message: "Test This shit up", name: "Bryan Gonzales" });
   });
-  instance.register(MessageRoute, { prefix: "message" });
+  instance.register(MessageRoute, { prefix: "/message" });
 
   done();
 }
