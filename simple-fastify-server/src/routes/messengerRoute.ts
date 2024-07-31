@@ -5,7 +5,7 @@ import {
   FastifyServerOptions,
 } from "fastify";
 
-export default function MesssengerRoute(
+export default function MessageRoute(
   instance: FastifyInstance,
   option: FastifyServerOptions,
   done: Function
