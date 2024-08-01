@@ -6,10 +6,16 @@ export default function routes(
   _option: FastifyServerOptions,
   done: Function
 ) {
-  instance.register(import("@fastify/cors"), fastifyCorsConfig),
-    instance.get("/test", async (req, res) => {
-      return res.send({ message: "Test This shit up", name: "Bryan Gonzales" });
-    });
+  instance.addHook("onError", (req, res, error, done) => {
+    console.error(error);
+    done();
+  });
+  instance.get("/test", async (req, res) => {
+    return res.send({ message: "Test This shit up", name: "Bryan Gonzales" });
+  });
+
+  instance.register(import("@fastify/cors"), fastifyCorsConfig);
+
   instance.register(MessageRoute, { prefix: "/message" });
 
   done();
