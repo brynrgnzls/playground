@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "inner/api/serverless.ts"
+      "destination": "/inner/api/serverless.ts"
     },
     {
       "source": "./my-shit",
