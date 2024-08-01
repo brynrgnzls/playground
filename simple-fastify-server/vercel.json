@@ -5,10 +5,10 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/inner/api/serverless.ts"
+      "destination": "/api/serverless.ts"
     },
     {
-      "source": "./my-shit",
+      "source": "/my-shit",
       "destination": "https://example.com/"
     }
   ]
