@@ -1,6 +1,6 @@
 import { FastifyInstance, FastifyServerOptions } from "fastify";
 import { MessageRoute } from "./rotues/index.js";
-export default function Routes(
+export default function routes(
   instance: FastifyInstance,
   _option: FastifyServerOptions,
   done: Function
